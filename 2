@@ -1,0 +1,40 @@
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function returnMyExercise() {
+  // start main function
+
+/*
+ * Declare e atribua o valor de cada váriável a partir da linha 34.
+ * Variáveis: meuTamanho, corDaMinhaCamisa, queroEstudarNaTrybe, computadorLigado
+ * e a constante PI
+ */
+
+let meuTamanho = 173;
+const PI = 3.14;
+let corDaMinhaCamisa = "azul"
+let queroEstudarNaTrybe = true
+let computadorLigado = false;
+
+  // fim do seu código
