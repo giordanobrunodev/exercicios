@@ -1,0 +1,41 @@
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function multiplicaPorDois(numeros) {
+    var resultados = [];
+    for( var index = 0; index < numeros.length; index++) {
+    var elementoMultiplicadoPorDois = numeros[index] * 2
+    resultados.push(elementoMultiplicadoPorDois)
+    }
+    return resultados;   
+
+/*
+ * Complete a função multiplicando todos os elementos
+ * do array `numeros` por dois e retornando um array
+ * com esses resultados
+ */
+ 
+}
+
+// fim do seu código
